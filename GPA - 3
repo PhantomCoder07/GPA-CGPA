@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf ("Enter the Score: ");
+    scanf ("%d",&a);
+    switch (a/10)
+    {
+    case 10:
+    case 9:
+    case 8:
+        printf ("Obtained GPA: A");
+        break;
+    case 7:
+        printf ("Obtained GPA: B");
+        break;
+    case 6:
+        printf ("Obtained GPA: C");
+        break;
+    case 5:
+        printf ("Obtained GPA: D");
+        break;
+    case 4:
+        printf ("Obtained GPA: E");
+        break;
+    case 3:
+    case 2:
+    case 1:
+    case 0:
+        printf ("Obtained GPA: F");
+        break;
+    default:
+        printf ("Mark is not correct.");
+    }
+    return 0;
+}
