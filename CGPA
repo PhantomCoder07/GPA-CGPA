@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+    float a;
+    printf ("Enter the Score: ");
+    scanf ("%f",&a);
+    if (a>=85 && a<=100)
+        printf ("Obtained CGPA: 4.00 (A+)");
+    else if (a>=80 && a<=84)
+        printf ("Obtained CGPA: 3.70 (A)");
+    else if (a>=75 && a<=79)
+        printf ("Obtained CGPA: 3.30 (B+)");
+    else if (a>=70 && a<=74)
+        printf ("Obtained CGPA: 3.00 (B)");
+    else if (a>=65 && a<=69)
+        printf ("Obtained CGPA: 2.70 (B-)");
+    else if (a>=60 && a<=64)
+        printf ("Obtained CGPA: 2.30 (C+)");
+    else if (a>=55 && a<=59)
+        printf ("Obtained CGPA: 2.00 (C)");
+    else if (a>=50 && a<=54)
+        printf ("Obtained CGPA: 1.70 (C-)");
+    else if (a>=45 && a<=49)
+        printf ("Obtained CGPA: 1.30 (D+)");
+    else if (a>=40 && a<=44)
+        printf ("Obtained CGPA: 1.00 (D)");
+    else if (a>=0 && a<=39)
+        printf ("Obtained CGPA: 0.00 (F)");
+    else
+        printf ("Invalid Score.");
+    return 0;
+}
